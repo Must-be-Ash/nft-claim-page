@@ -1,37 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NFT Claim Site Demo
+
+A simple NFT claiming website showcasing [Coinbase Developer Platform (CDP) Embedded Wallets](https://www.coinbase.com/developer-platform/products/embedded-wallets) integrated with smart contracts using [Herd](https://herd.eco).
+
+## Features
+
+- **Email-based authentication** with OTP verification
+- **Embedded wallet creation** - no browser extension required
+- **Free NFT claiming** on Base mainnet
+- **Real-time transaction tracking** and community activity
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone and install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Set up environment variables:**
+   ```bash
+   cp .env.example .env.local
+   ```
+   - Get your CDP Project ID from [CDP Portal](https://portal.cdp.coinbase.com/projects)
+   - Configure your domain at [Embedded Wallets Settings](https://portal.cdp.coinbase.com/products/embedded-wallets/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) to see the demo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Next.js 15** with TypeScript
+- **CDP Embedded Wallets** for authentication and transactions
+- **Herd API** for smart contract integration
+- **Base** blockchain network
 
-To learn more about Next.js, take a look at the following resources:
+## How it Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nft-claim-page
+1. Users authenticate with their email (no wallet installation needed)
+2. CDP creates an embedded wallet automatically
+3. Users can claim free NFTs directly from the web interface
+4. Herd API handles smart contract interactions seamlessly
