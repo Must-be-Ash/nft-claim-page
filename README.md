@@ -1,5 +1,7 @@
 # NFT Claim Site Demo
 
+> **Outdated, not maintained.** Next.js and CDP packages are out of date and need to be updated before use.
+
 A simple NFT claiming website showcasing [Coinbase Developer Platform (CDP) Embedded Wallets](https://www.coinbase.com/developer-platform/products/embedded-wallets) integrated with smart contracts using [Herd](https://herd.eco).
 
 ## Features
